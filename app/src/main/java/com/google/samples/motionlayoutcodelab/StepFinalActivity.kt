@@ -35,6 +35,45 @@ class StepFinalActivity : AppCompatActivity() {
             }
         )
         fab.setOnClickListener { closeAnimation() }
+        close_icon.setOnClickListener { filterAnimation() }
+    }
+
+    private fun filterAnimation() {
+        setupListenerComplete(
+            {
+                ml_activity_stepfinal.transitionToState(R.id.set5_filterCollapse)
+            }, {
+                setupListenerComplete(
+                    {
+                        ml_activity_stepfinal.transitionToState(R.id.set6_filterLoading)
+                    }, {
+                        ml_activity_stepfinal.transitionToState(R.id.set7_filterBase)
+                    }
+                )
+            }
+        )
+        fab.setOnClickListener { unfilterAnimation() }
+        close_icon.setOnClickListener { unfilterAnimation() }
+    }
+
+    private fun unfilterAnimation() {
+        setupListenerComplete(
+            {
+                ml_activity_stepfinal.transitionToState(R.id.set8_unfilterInset)
+            }, {
+                setupListenerComplete(
+                    {
+                        ml_activity_stepfinal.transitionToState(R.id.set9_unfilterLoading)
+                    }, {
+                        ml_activity_stepfinal.transitionToState(R.id.set10_unfilterOutset)
+                    }
+                )
+            }
+        )
+        fab.setOnClickListener { openAnimation() }
+        close_icon.setOnClickListener {
+            //do nothing
+        }
     }
 
     private fun closeAnimation() {

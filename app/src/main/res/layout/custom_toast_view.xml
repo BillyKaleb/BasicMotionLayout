@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ml_custom_toast"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/custom_toast_motion_scene">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_custom_snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_custom_snackbar"
+        android:paddingStart="8dp" />
+
+    <ImageView
+        android:id="@+id/iv_custom_snackbar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/cl_custom_snackbar"
+        app:layout_constraintLeft_toLeftOf="@id/cl_custom_snackbar"
+        app:layout_constraintTop_toTopOf="@id/cl_custom_snackbar" />
+
+    <TextView
+        android:id="@+id/tv_custom_snackbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="TESTING PLEASE WORKS"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_custom_snackbar"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@id/iv_custom_snackbar"
+        app:layout_constraintTop_toTopOf="@id/iv_custom_snackbar" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

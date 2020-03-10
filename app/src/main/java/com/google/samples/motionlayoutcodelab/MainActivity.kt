@@ -59,6 +59,11 @@ private val data = listOf(
         "Learn how to use MotionLayout to build complex collapsing toolbar animations.",
         Step8Activity::class
     ),
+    Step("Custom Toast",
+        "Showcasing practical usage for toast",
+        "Example of Usage, part 1",
+        CustomToastShowcase::class
+    ),
     Step("Completed: Step Final ",
         "Final Examples",
         "Lets see",

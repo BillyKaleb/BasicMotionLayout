@@ -1,15 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!--
-This Motion Scene contains 10 Constraint Sets and 9 Transitions between them.
-Each constraint set derives from the previous set and hence only the changes
-from the previous set are present (the rest are 'derived', duh..)
-
-The naming convention for the sets are "set1_, set2_ ... set10_.
-There are 9 transitions, 1 between every 2 consecutive sets.
-For ex: 1 -> 2, 2 -> 3 ... 9 -> 10.
--->
-
 <MotionScene
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">

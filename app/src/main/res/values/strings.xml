@@ -39,4 +39,5 @@
     <string name="title_activity_step7_completed">Complex motion with KeyFrames</string>
     <string name="title_activity_step8">Running motion with code</string>
     <string name="title_activity_step_final">Final Demo</string>
+    <string name="title_activity_custom_toast">CustomToast</string>
 </resources>

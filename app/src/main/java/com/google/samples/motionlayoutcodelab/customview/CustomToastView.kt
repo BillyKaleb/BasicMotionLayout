@@ -1,6 +1,7 @@
 package com.google.samples.motionlayoutcodelab.customview
 
 import android.content.Context
+import android.os.Handler
 import android.util.AttributeSet
 import android.view.View
 import android.widget.FrameLayout
@@ -59,9 +60,10 @@ class CustomToastView @JvmOverloads constructor(
     }
 
     private fun startTimer() {
-        Timer("SettingUp", false).schedule(3000) {
+        val handler = Handler()
+        handler.postDelayed({
             closeAnimation()
-        }
+        }, 3000)
     }
 
     private fun closeAnimation() {

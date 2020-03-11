@@ -46,6 +46,12 @@
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/iv_custom_snackbar" >
+            <PropertySet android:visibility="visible"/>
+        </Constraint>
+        <Constraint android:id="@id/tv_custom_snackbar" >
+            <PropertySet android:visibility="visible"/>
+        </Constraint>
     </ConstraintSet>
 
 </MotionScene>

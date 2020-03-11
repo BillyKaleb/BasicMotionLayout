@@ -59,7 +59,7 @@ class CustomToastView @JvmOverloads constructor(
     }
 
     private fun startTimer() {
-        Timer("SettingUp", false).schedule(5000) {
+        Timer("SettingUp", false).schedule(3000) {
             closeAnimation()
         }
     }

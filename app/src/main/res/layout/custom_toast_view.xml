@@ -21,10 +21,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@id/cl_custom_snackbar"
         app:layout_constraintLeft_toLeftOf="@id/cl_custom_snackbar"
-        app:layout_constraintTop_toTopOf="@id/cl_custom_snackbar" />
+        app:layout_constraintTop_toTopOf="@id/cl_custom_snackbar"
+        app:srcCompat="@drawable/ic_success" />
 
     <TextView
         android:id="@+id/tv_custom_snackbar"
@@ -36,7 +36,7 @@
         android:layout_marginBottom="12dp"
         android:ellipsize="end"
         android:maxLines="3"
-        android:text="TESTING PLEASE WORKS"
+        android:text="Payment Success"
         android:textColor="#000000"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@id/iv_custom_snackbar"
